@@ -54,6 +54,8 @@ services:
       - 27017:27017
     logging:
       driver: none
+    volumes:
+        - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
 
   kafka-ui:
     image: provectuslabs/kafka-ui:latest
