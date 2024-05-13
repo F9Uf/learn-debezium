@@ -1,0 +1,15 @@
+kafka:
+  brokers: ["kafka:9092"]
+  schemaRegistry:
+    enabled: false
+  
+connect:
+  enabled: true
+  clusters:
+    - name: connect-local
+      url: http://kafka-connect:8083
+      tls:
+        enabled: false
+  connectTimeout: 15s
+  readTimeout: 60s
+  requestTimeout: 6s
