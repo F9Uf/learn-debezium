@@ -1,10 +1,10 @@
-db = db.getSiblingDB('test-database');
+db = db.getSiblingDB('company');
 
-db.users.insertMany([
+db.employees.insertMany([
     {
         "name": "Leanne Graham",
         "username": "Bret",
-        "email": "Sincere@april.biz",
+        "email": "Sincere@my-company.com",
         "address": {
             "street": "Kulas Light",
             "suite": "Apt. 556",
@@ -15,18 +15,12 @@ db.users.insertMany([
                 "lng": "81.1496"
             }
         },
-        "phone": "1-770-736-8031 x56442",
-        "website": "hildegard.org",
-        "company": {
-            "name": "Romaguera-Crona",
-            "catchPhrase": "Multi-layered client-server neural-net",
-            "bs": "harness real-time e-markets"
-        }
+        "phone": "1-770-736-8031 x56442"
     },
     {
         "name": "Ervin Howell",
         "username": "Antonette",
-        "email": "Shanna@melissa.tv",
+        "email": "Shanna@my-company.com",
         "address": {
             "street": "Victor Plains",
             "suite": "Suite 879",
@@ -38,17 +32,11 @@ db.users.insertMany([
             }
         },
         "phone": "010-692-6593 x09125",
-        "website": "anastasia.net",
-        "company": {
-            "name": "Deckow-Crist",
-            "catchPhrase": "Proactive didactic contingency",
-            "bs": "synergize scalable supply-chains"
-        }
     },
     {
         "name": "Clementine Bauch",
         "username": "Samantha",
-        "email": "Nathan@yesenia.net",
+        "email": "Nathan@my-company.com",
         "address": {
             "street": "Douglas Extension",
             "suite": "Suite 847",
@@ -60,11 +48,5 @@ db.users.insertMany([
             }
         },
         "phone": "1-463-123-4447",
-        "website": "ramiro.info",
-        "company": {
-            "name": "Romaguera-Jacobson",
-            "catchPhrase": "Face to face bifurcated interface",
-            "bs": "e-enable strategic applications"
-        }
     }
 ])
